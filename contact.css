@@ -1,0 +1,71 @@
+.container{
+  width:1500px;
+}
+
+.nav{
+  height:80px;
+}
+.logo img{
+  float:left;
+  height:auto;
+width:200px;
+}
+
+
+.nav ul{
+float:right;
+list-style-type:none;
+margin-top:25px;
+
+}
+.nav ul li{
+display:inline-block;
+}
+.nav ul li a{
+  text-decoration:none;
+  padding:5px 25px;
+  border:1px solid green;
+}
+
+.nav ul li a:hover{
+  background-color:66FF66;
+  transition:0.6s;
+ }
+
+.contact-box
+{
+
+  float:left;
+  width:800px;
+  height:auto;
+  background-image:url("IMG.jpg");
+  margin-left:250px;
+  padding:50px;
+  border:1px solid blue;
+}
+.contact-box label{
+  display:block;
+  padding:20px;
+}
+.contact-box input{
+  border:800px;
+  padding:10px;
+  width:100%;
+}
+
+.contact-box textarea{
+  height:130px;
+  width:100%;
+}
+
+.contact-box button{
+  background-color:red;
+}
+.sec{
+  margin:100px;
+  width:1000px;
+  height:1000px:
+}
+h1{
+  color:white;
+  background-color:#3366FF;
