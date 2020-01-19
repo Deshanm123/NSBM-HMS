@@ -81,18 +81,17 @@ p1{
   width: auto;
   float: left;
 }
-nav{
-  float: left;
-}
-p8 ul li{
+ nav p8 ul li{
   list-style-type: none;
+  text-align: left;
 }
-p8 ul li a{
+ nav p8 ul li a{
   text-decoration: none;
 }
-p8 ol li{
+ nav p8 ol li{
   list-style-type: none;
+  text-align: left;
 }
-p8 ol li a{
+ nav p8 ol li a{
   text-decoration: none;
 }
