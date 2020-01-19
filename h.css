@@ -1,4 +1,5 @@
 *{
+  background-image: URL("Ash-Color-Plain-Wallpaper-Download.jpg");
   font-size: 20px;
   font-family: cursive;
   text-align: center;
@@ -82,6 +83,12 @@ p1{
 }
 nav{
   float: left;
+}
+p8 ul li{
+  list-style-type: none;
+}
+p8 ul li a{
+  text-decoration: none;
 }
 p8 ol li{
   list-style-type: none;
