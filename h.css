@@ -2,7 +2,6 @@
   font-size: 20px;
   font-family: cursive;
   text-align: center;
-  background-color: #ccfae4;
 }
 .logo{
   float: left;
@@ -70,16 +69,16 @@ p1{
   font-style: italic;
   font-size: 25px;
 }
-.nav-2 ul{
-  list-style-type: none;
+.nav-2 ul li{
   display: inline-block;
 }
-.nav-2 ul li a{
-  float: none;
-  display:inline-block;
-  margin:50px;
+.nav-2 li a{
+  padding: 10px;
+  margin:90px;
   border: 1px solid blue;
   text-decoration: none;
-  list-style-type: none;
-
+}
+.footer-logo img{
+  height: 500px;
+  width: 1500px;
 }
