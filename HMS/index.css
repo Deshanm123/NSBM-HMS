@@ -14,15 +14,17 @@
     background-color: #cfe2f3;
     padding: 10px 10px;
     color:blue;
+    font-size: 20px;
   }
 .landscape{
   background-color: #efefef;
 }
 p3{
+  font-size: 20px;
   text-decoration: underline;
   text-shadow: none;
   color:darkblue;
-  font-size:25px;
+  font-size:15px;
 }
 .birdseye{
   background-color: #efefef;
@@ -56,11 +58,13 @@ display:inline-block;
   transition:0.5s;
 }
 p{
+font-size: 20px;
 text-align: center;
 }
 h1{
   font-family: cursive;
   color:white;
+  font-size: 30px;
   background-color:#3366FF;
   font-style: normal;
 }
