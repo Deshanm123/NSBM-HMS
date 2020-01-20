@@ -20,17 +20,16 @@
   background-color: #efefef;
 }
 p3{
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: underline;
   text-shadow: none;
   color:darkblue;
-  font-size:15px;
 }
 .birdseye{
   background-color: #efefef;
 }
 body{
-  font-size: 25px;
+
   background-image: URL("canvas.jpg");
   text-align:center;
 }
@@ -71,33 +70,47 @@ h1{
 .nav-2 ul li{
   display: inline-block;
 }
-.nav-2 li a{
+.nav-2 ul li a{
   color: blue;
   padding: 10px;
   margin:90px;
   border: 1px solid blue;
   text-decoration: none;
 }
+.nav-2 ul li a:hover{
+  background-color:#00ff00;
+  transition:0.5s;
+}
 .footer-logo{
   height: auto;
   width: auto;
   float: left;
+}
+.program ul{
+  font-size: 20px
 }
 .program ul li{
   list-style-type: none;
 }
  .program ul li a{
    text-decoration: none;
+   font-size: 20px;
  }
  .program ol li{
    list-style-type: none;
  }
   .program ol li a{
     text-decoration: none;
+     font-size: 20px;
   }
   .address ul li{
     list-style-type: none;
-  }
-   .address ul li a{
-     text-decoration: none;
+    font-size: 20px;
+}
+.list{
+  font-size: 20px;
+}
+.program ul li a:hover, ol li a:hover{
+  background-color:#00ff00;
+  transition:0.5s;
 }
