@@ -1,3 +1,6 @@
+body{
+  background-image: url("canvas.jpg");
+}
 .container{
   width:1500px;
 }
