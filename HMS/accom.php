@@ -136,6 +136,7 @@ For student accomodation there are 8 number of floors collectively containing 35
 <li><p>New Edge Space is comprised of three subcafeteria that serves Indian Dinning cusine, short eats and traditional cusine</p></li></ul>
 
 
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
