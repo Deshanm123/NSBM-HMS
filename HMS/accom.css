@@ -1,6 +1,5 @@
 body{
-  background-image: url("canvas.jpg");
-  background-color: black;
+  background-image: URL("canvas.jpg");
 }
 .container{
   width:1500px;
