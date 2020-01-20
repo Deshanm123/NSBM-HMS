@@ -51,7 +51,7 @@ $username= ($_POST['username']);
 $email= ($_POST['email']);
 $password= ($_POST['password1']);
 $confirmpass= ($_POST['password2']);
-
+}
 //fields empty
 if(empty($username))
 {
@@ -119,4 +119,5 @@ if(isset($_GET['logout'])){
 session_destroy();
 header('location:index.php');
 }
+
 ?>
