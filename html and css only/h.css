@@ -81,18 +81,20 @@ p1{
   width: auto;
   float: left;
 }
-nav{
-  float: left;
-}
-p8 ul li{
+.program ul li{
   list-style-type: none;
 }
-p8 ul li a{
-  text-decoration: none;
-}
-p8 ol li{
-  list-style-type: none;
-}
-p8 ol li a{
-  text-decoration: none;
-}
+ .program ul li a{
+   text-decoration: none;
+ }
+ .program ol li{
+   list-style-type: none;
+ }
+  .program ol li a{
+    text-decoration: none;
+  }
+  .address ul li{
+    list-style-type: none;
+  }
+   .address ul li a{
+     text-decoration: none;
