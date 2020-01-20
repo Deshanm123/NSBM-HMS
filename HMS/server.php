@@ -82,7 +82,7 @@ array_push($errors,"Password is not matched!");
        $sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$password')";
        mysqli_query($db, $sql);
 
-       header('location:login.php');
+       header('location:index.php');
      }
     }   
 
