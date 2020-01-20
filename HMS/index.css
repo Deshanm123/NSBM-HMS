@@ -36,6 +36,7 @@ p3{
   background-color: #efefef;
 }
 body{
+  background-image: URL("canvas.jpg");
   text-align:center;
   font-family: sans-serif;
   //font-size: 20px;
