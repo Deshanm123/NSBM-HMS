@@ -88,7 +88,7 @@ Thus, it moves onto Phase II, acquiring an additional 15 acres of land, in Pitip
 <div class="nav-2">
   <ul>
 <li><a href=":+94115445000">phone</a></li>
-<li><a href="8sTeyywo.htm">Facebook</a></li>
+<li><a href="https://www.facebook.com/nsbm.lk/">Facebook</a></li>
 <li><a href="http://www.nsbm.ac.lk/">Email</a></li>
 <li><a href="https://api.whatsapp.com/send?phone=94712445000&text=&source=&data=">hotline</a></li>
 </ul>
