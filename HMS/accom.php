@@ -136,16 +136,6 @@ For student accomodation there are 8 number of floors collectively containing 35
 <li><p>New Edge Space is comprised of three subcafeteria that serves Indian Dinning cusine, short eats and traditional cusine</p></li></ul>
 
 
-
-<div class="staff">
-  <h2><u>Word from Warden</u></h2>
-
-    <p>Accommodation for nsbm children is an important requirement. The hostel facilities offered by the universities are worth it. Around 700 girls from remote areas have been provided with protection. We hope they have the right discipline. It is our responsibility to inform you of the laws here. The monthly payment is also very important. The Hostel Management System (HMS) has been introduced for this purpose. The Hostel Management System helps you to pay for the hostel fees and to renew the room key. </p>
-<br>
-
-</div>
-
-
 <div class="slideshow-container">
 
 <div class="mySlides fade">
