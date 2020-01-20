@@ -28,13 +28,14 @@ if (count($errors)==0){
 
 	if(mysqli_num_rows($result)==1){
 		$row = mysqli_fetch_assoc($result);
-		// $user_id = $row['ID'];
+		$user_id = $row['ID'];
 
-		// $_SESSION["ID"] = $user_id;
+		$_SESSION["ID"] = $user_id;
 
 		header("Location: index.php");
-		}else{
-            // array_push($errors,"wrong username/password");
+    }
+    else{
+           // array_push($errors,"wrong username/password");
             echo '<script type="text/javascript">
             window.onload = function () { alert("Username or password incorrect..!!");
             window.location.href = "login.php";
@@ -74,45 +75,16 @@ if(($password) != ($confirmpass))
 array_push($errors,"Password is not matched!");
 }
 
-
-
-
-//login user
-if(isset($_POST['login_user'])){
-  $username=($_post['username']);
-  $password=($_POST['password1']);
-}
-  //check errors in login
-   if (empty($username)){
-     array_push($errors,"username is required");
-   }
-if(empty($password1)){
-  array_push($errors,"password is required");
-}
-if(count($errors == 0 )){
-  $query="SELECT * FROM user WHERE username='$username' AND password='$password'";
-  $results= mysqli_query($db,$query);
-}
-  if(mysql_num_rows($results)){
-      $_SESSION['username'] = $username;
-       $_SESSION['sucess'] = "logged in sucessfully";
-       header("location: logindex.php");
-}
-  else{
-    array_push($errors,"wrong credentials");
-       }
-
-
        //no errors
        if(count($errors) == 0)
        {
-       $enpass = md5($password);
+      // $enpass = md5($password);
        $sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$password')";
        mysqli_query($db, $sql);
 
        header('location:login.php');
      }
-   }
+    }   
 
 
 //logout
