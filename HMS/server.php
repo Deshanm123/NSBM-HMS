@@ -78,7 +78,7 @@ array_push($errors,"Password is not matched!");
 
 
 //login user
-if (if(isset($_POST['login_user'])){
+if(isset($_POST['login_user'])){
   $username=($_post['username']);
   $password=($_POST['password1']);
 }
@@ -87,7 +87,7 @@ if (if(isset($_POST['login_user'])){
      array_push($errors,"username is required");
    }
 if(empty($password1)){
-  array_push{$errors,"password is required"};
+  array_push($errors,"password is required");
 }
 if(count($errors == 0 )){
   $query="SELECT * FROM user WHERE username='$username' AND password='$password1'";
@@ -103,15 +103,15 @@ if(count($errors == 0 )){
        }
 
 
-//no errors
-if(count($errors) == 0)
-{
-$enpass = md5($password);
-$sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$enpass')";
-mysqli_query($db, $sql);
+       //no errors
+       if(count($errors) == 0)
+       {
+       $enpass = md5($password);
+       $sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$enpass')";
+       mysqli_query($db, $sql);
 
-header('location:login.php');
-}
+       header('location:login.php');
+       }
 
 
 //logout
