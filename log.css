@@ -1,0 +1,66 @@
+body{
+  text-align:center;
+background-image: URL("canvas.jpg")
+}
+.container{
+  width:auto;
+}
+.logo img{
+  float:left;
+  height:auto;
+  width:auto;
+}
+h1{
+  font-family: cursive;
+  font-size: 30px;
+  color:white;
+  padding: 15x;
+  background-color:#3366FF;
+}
+.nav{
+    height:80px;
+  }
+  .nav ul{
+    float:right;
+    list-style-type:none;
+    margin-top:10px;
+}
+.nav ul li{
+    display:inline-block;
+}
+.nav ul li a{
+    text-decoration:none;
+    padding:10px;
+    border:1px solid blue;
+    color: blue;
+    font-family: cursive;
+}
+.nav ul li a:hover{
+    background-color:66FF66;
+    transition:0.6s;
+}
+.login-bx{
+  margin: 0px 500px;
+  width:500px;
+  height:550px;
+  background:#63dabd;
+  color:white;
+  font-size:18px;
+}
+.login-bx input[type="text"]
+{
+  background-color: white;
+  width:250px;
+  padding-left:50px;
+  height:30px;
+  color:black;
+}
+label{
+  font-size: 20px;
+}
+.type{
+  padding: 4px;
+  color: blue;
+  background-color: white;
+  font-size: 17px;
+}
