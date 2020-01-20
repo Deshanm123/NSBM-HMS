@@ -16,41 +16,44 @@ h1{
   padding: 15x;
   background-color:#3366FF;
 }
-  .nav{
+.nav{
     height:80px;
   }
-.nav ul{
-float:right;
-list-style-type:none;
-margin-top:10px;
+  .nav ul{
+    float:right;
+    list-style-type:none;
+    margin-top:10px;
 }
 .nav ul li{
-display:inline-block;
+    display:inline-block;
 }
 .nav ul li a{
-  text-decoration:none;
-  padding:15px;
-  border:1px solid green;
+    text-decoration:none;
+    padding:10px;
+    border:1px solid blue;
+    color: blue;
+    font-family: cursive;
 }
-
 .nav ul li a:hover{
-  background-color:66FF66;
-  transition:0.6s;
+    background-color:66FF66;
+    transition:0.6s;
 }
-
 .login-bx{
-  margin: 50px 500px;
-  width:480px;
-  height:600px;
-  background:#CCCC99;
+  margin: 0px 500px;
+  width:500px;
+  height:550px;
+  background:#63dabd;
   color:white;
   font-size:18px;
 }
-
-.login-bx input[type="text"]{
+.login-bx input[type="text"]
+{
+  background-color: white;
   width:250px;
-  padding-left:75px;
+  padding-left:50px;
   height:30px;
-  color:blue;
-
+  color:black;
+}
+label{
+  font-size: 20px;
 }
