@@ -1,48 +1,87 @@
 <?php
 session_start();
+$db=mysqli_connect('localhost','root','','practise');
+$errors= array();
+$fullname="";
+$pass="";
 
-//initializing variables
-// $username="";
-// $email="";
-// $errors=array();
+//log user in from login page
+if (isset($_POST['login_user']))
+{
+    $username= ($_POST['username']);
+    $pass1= ($_POST['password']);
 
- //connect  to db
- $db = mysqli_connect('localhost','root','','practise')
- or die ("could not connect to database");
+if(empty($username))
+{
+	array_push($errors, "Username is required");
+}
+
+if(empty($pass1))
+{
+	array_push($errors, "Password is required");
+}
+
+if (count($errors)==0){
+	$password1= md5($pass1);
+	$query="SELECT * FROM user WHERE username='$username' AND password='$password1'";
+	$result = mysqli_query($db, $query);
+
+	if(mysqli_num_rows($result)==1){
+		$row = mysqli_fetch_assoc($result);
+		// $user_id = $row['ID'];
+
+		// $_SESSION["ID"] = $user_id;
+
+		header("Location: index.php");
+		}else{
+            // array_push($errors,"wrong username/password");
+            echo '<script type="text/javascript">
+            window.onload = function () { alert("Username or password incorrect..!!");
+            window.location.href = "login.php";
+            };
+            </script>';
+		}
+}
+}
+
+// insert details to users table
+if (isset($_POST['user_register']))
+{
+$username= ($_POST['username']);
+$email= ($_POST['email']);
+$password= ($_POST['password1']);
+$confirmpass= ($_POST['password2']);
+
+//fields empty
+if(empty($username))
+{
+array_push($errors,"Please enter username!");
+}
+if(empty($email))
+{
+array_push($errors,"Please enter e-mail!");
+}
+if(empty($password))
+{
+array_push($errors,"Please enter password!");
+}
+if(empty($confirmpass))
+{
+array_push($errors,"Please enter password!");
+}
+if(($password) != ($confirmpass))
+{
+array_push($errors,"Password is not matched!");
+}
 
 
-//register
-// if(isset($_POST['user_register'])){
-//
-//  $username=($_POST['username']);
-//  $email=($_POST['email']);
-//  $password1=($_POST['password1']);
-//  $password2=($_POST['password2']);
-// }
-//
-// //form validation
-// if(empty($username)){
-//   array_push($errors, 'username is required'); }
-// if(empty($password1)){
-//   array_push($errors, "password is required"); }
-// if(empty($password2)){
-//   array_push($errors, "password is required");}
-// if($password1 != $password2){
-//   array_push($errors, "passwords must match each other");}
-//
-// //register the user if there is no rrors
-// if(count($errors == 0){
-// $usr_insert_query = "INSERT INTO user ('username' , 'email', 'password1') VALUES ($username,$email,$password1)";
-// mysqli_query($db,$usr_insert_query);
-// $_SESSION['username']=$username;
-// $_SESSION['sucess']="User sucessfully logged in";
-//   header("location:logindex.php");
-// }
+
 
 //login user
 if (if(isset($_POST['login_user'])){
   $username=($_post['username']);
   $password=($_POST['password1']);
+}
   //check errors in login
    if (empty($username)){
      array_push($errors,"username is required");
@@ -53,7 +92,7 @@ if(empty($password1)){
 if(count($errors == 0 )){
   $query="SELECT * FROM user WHERE username='$username' AND password='$password1'";
   $results= mysql_query($db,$usr_insert_query);
-
+}
   if(mysql_num_rows($results)){
       $_SESSION['username'] = $username;
        $_SESSION['sucess'] = "logged in sucessfully";
@@ -63,7 +102,21 @@ if(count($errors == 0 )){
     array_push($errors,"wrrong credentials");
        }
 
-}
+
+//no errors
+if(count($errors) == 0)
+{
+$enpass = md5($password);
+$sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$enpass')";
+mysqli_query($db, $sql);
+
+header('location:login.php');
 }
 
+
+//logout
+if(isset($_GET['logout'])){
+session_destroy();
+header('location:index.php');
+}
 ?>
