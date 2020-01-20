@@ -2,8 +2,8 @@
 session_start();
 $db=mysqli_connect('localhost','root','','practise');
 $errors= array();
-$fullname="";
-$pass="";
+// $fullname="";
+ 
 
 //log user in from login page
 if (isset($_POST['login_user']))
@@ -22,20 +22,19 @@ if(empty($pass1))
 }
 
 if (count($errors)==0){
-	$password1= md5($pass1);
-	$query="SELECT * FROM user WHERE username='$username' AND password='$password1'";
+	
+	$query="SELECT * FROM user WHERE username='$username' AND password='$pass1'";
 	$result = mysqli_query($db, $query);
 
 	if(mysqli_num_rows($result)==1){
-		$row = mysqli_fetch_assoc($result);
-		$user_id = $row['ID'];
+	//	$row = mysqli_fetch_assoc($result);
+		//$user_id = $row['ID'];
 
-		$_SESSION["ID"] = $user_id;
-
-		header("Location: index.php");
+		//$_SESSION["ID"] = $user_id; 
+		header("Location: logindex.php");
     }
     else{
-           // array_push($errors,"wrong username/password");
+           
             echo '<script type="text/javascript">
             window.onload = function () { alert("Username or password incorrect..!!");
             window.location.href = "login.php";
