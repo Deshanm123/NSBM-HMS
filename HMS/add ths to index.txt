@@ -1,0 +1,14 @@
+<html>
+<head>
+
+  <title>first array</title>
+<script language="javascript" type="text/javascript">
+function Warnuser(){
+  return confirm("Are You a student?");
+}
+</script>
+</head>
+<body>
+<a href="ref.html" onclick="return Warnuser()">student access only</a>
+</body>
+</html>

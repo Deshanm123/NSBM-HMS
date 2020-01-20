@@ -1,0 +1,51 @@
+.container{
+  width:1500px;
+}
+
+.nav{
+  height:80px;
+}
+.logo img{
+  float:left;
+  height:auto;
+width:200px;
+}
+
+
+.nav ul{
+float:right;
+list-style-type:none;
+margin-top:25px;
+
+}
+.nav ul li{
+display:inline-block;
+}
+.nav ul li a{
+  text-decoration:none;
+  padding:5px 25px;
+  border:1px solid green;
+}
+
+.nav ul li a:hover{
+  background-color:66FF66;
+  transition:0.6s;
+ }
+
+ h1{
+   color:white;
+   background-color:#3366FF;
+ }
+.potential{
+width:1100px;
+border:1px;
+margin-left:200px;
+
+}
+.potential p{
+  font-family:helvetica;
+  font-size:32px;
+  color:blue;
+
+
+}
