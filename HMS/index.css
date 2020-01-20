@@ -22,7 +22,6 @@
   background-color: #efefef;
 }
 p3{
-  font-family: cursive;
   text-decoration: underline;
   text-shadow: none;
   color:darkblue;
@@ -36,9 +35,8 @@ p3{
   background-color: #efefef;
 }
 body{
-  background-image: URL("canvas.jpg");
   text-align:center;
-  font-family: sans-serif;
+  font-family: cursive;
   //font-size: 20px;
 }
 .logo img{
