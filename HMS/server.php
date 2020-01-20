@@ -91,7 +91,7 @@ if(empty($password1)){
 }
 if(count($errors == 0 )){
   $query="SELECT * FROM user WHERE username='$username' AND password='$password'";
-  $results= mysqli_query($db,$usr_insert_query);
+  $results= mysqli_query($db,$query);
 }
   if(mysql_num_rows($results)){
       $_SESSION['username'] = $username;
