@@ -31,7 +31,7 @@ if($password1 != password2){array_push($errors, "passwords must match each other
 
 //register the user if there is no rrors
 if(count($errors == 0){
-  $usr_insert_query = "INSERT INTO user ('username' , 'email', 'password1') VALUES ($username','$email','$password1')"
+  $usr_insert_query = "INSERT INTO user ('username' , 'email', 'password1') VALUES ($username,$email,$password1)";
 mysqli_query($db,$usr_insert_query);
 $_SESSION['username']=$username;
 $_SESSION['sucess']="User sucessfully logged in";
@@ -53,7 +53,7 @@ if(empty($password1)){
   array_push{$errors,"password is required"};
 }
 if(count($errors == 0 )){
-  $query="SELECT * FROM user WHERE username='$username' AND password='$password'";
+  $query="SELECT * FROM user WHERE username='$username' AND password='$password1'";
   $results= mysql_query($db,$usr_insert_query);
 
   if(mysql_num_rows($results)){
