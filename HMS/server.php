@@ -51,7 +51,7 @@ $username= ($_POST['username']);
 $email= ($_POST['email']);
 $password= ($_POST['password1']);
 $confirmpass= ($_POST['password2']);
-}
+
 //fields empty
 if(empty($username))
 {
@@ -90,8 +90,8 @@ if(empty($password1)){
   array_push($errors,"password is required");
 }
 if(count($errors == 0 )){
-  $query="SELECT * FROM user WHERE username='$username' AND password='$password1'";
-  $results= mysql_query($db,$usr_insert_query);
+  $query="SELECT * FROM user WHERE username='$username' AND password='$password'";
+  $results= mysqli_query($db,$usr_insert_query);
 }
   if(mysql_num_rows($results)){
       $_SESSION['username'] = $username;
@@ -99,7 +99,7 @@ if(count($errors == 0 )){
        header("location: logindex.php");
 }
   else{
-    array_push($errors,"wrrong credentials");
+    array_push($errors,"wrong credentials");
        }
 
 
@@ -107,11 +107,12 @@ if(count($errors == 0 )){
        if(count($errors) == 0)
        {
        $enpass = md5($password);
-       $sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$enpass')";
+       $sql="INSERT INTO user (username,email,password) VALUES ('$username','$email','$password')";
        mysqli_query($db, $sql);
 
        header('location:login.php');
-       }
+     }
+   }
 
 
 //logout
@@ -119,5 +120,4 @@ if(isset($_GET['logout'])){
 session_destroy();
 header('location:index.php');
 }
-
 ?>
