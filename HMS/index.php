@@ -40,10 +40,9 @@ NSBM Green University Town is the first ever green university in South Asian reg
 <div class="img">
 <img src="NSBM.jpg" width="1024px" height="480px" alt="2019">
 </div>
-<div="potential">
 <h1>
-NSBM hostel Complex.</h1>
-
+NSBM hostel Complex.
+</h1>
 <img class="landscape" src="landscape.jpg" width="1080px" height="480px" alt="view">
 <br>
 <br>
@@ -54,7 +53,7 @@ On-campus accommodation is available at NSBM Green University Town premeises.stu
 <p3>
 Facilities and features:
 </p3>
-<ul style="text-align:left; text-style-type:circle;">
+<ul style="list-style-type:none;">
     <li>fully furnished rooms with bed, table, chair, wardrobe and towel rack.</li>
     <li>Split type air conditioner unit for each room.</li>
     <li> Attached bathroom with international standards.</li>
@@ -74,7 +73,6 @@ A dedicated warden and an academic warden are available on premises with fulltim
  Students are required to bring all personal belongings required for living away from home for a substantial period including pillows, blankets, and bed sheets.
 </p4>
 </div>
-
 <div class="banner-1">
 <img class="birdseye" src="nsbm-2020.jpg"  width="1024px" height="480px" alt="birdseye-view">
 </div>
@@ -86,9 +84,38 @@ Thus, it moves onto Phase II, acquiring an additional 15 acres of land, in Pitip
 <br>
  All the new programmes and infrastructure which includes a Gents hostel,swimming pool, a ground and other facilities will support to global trends and competencies.
 <p/>
+<br>
+<div class="nav-2">
+  <ul>
+<li><a href=":+94115445000">phone</a></li>
+<li><a href="https://www.facebook.com/nsbm.lk/">Facebook</a></li>
+<li><a href="http://www.nsbm.ac.lk/">Email</a></li>
+<li><a href="https://api.whatsapp.com/send?phone=94712445000&text=&source=&data=">hotline</a></li>
+</ul>
 </div>
-
-
+<img class="footer-logo" src="logo.jpg" alt="logo">
+<div class="footer">
+ <div class="program" style="float:left;text-align:left;">
+<ul>
+ <li>PROGRAMMES:</li>
+ <li><a href="http://www.nsbm.ac.lk/#">FOUNDATION PROGRAMMES</a></li>
+ <li><a href="http://www.nsbm.ac.lk/#">UNDERGRADUATE PROGRAMMES</a></li>
+</ul>
+<ol>
+     <li><a href="http://www.nsbm.ac.lk/faculties/faculty-of-business/">Faculty of Business</a></li>
+     <li><a href="http://www.nsbm.ac.lk/faculties/faculty-of-computing/">Faculty of Computing</a></li>
+     <li><a href="http://www.nsbm.ac.lk/faculties/faculty-of-engineering/">Faculty of Engineering</a></li>
+     </ol>
+   </div>
+   <div class="address" style="float:right;text-align:right;">
+     <ul>
+       <li> Address:Mahenwaththa,Pitipana, Homagama,
+       Sri Lanka.</li>
+        <li>Phone:+94 11 544 5000</li>
+         <li>Fax:  +94 11 544 5009</li>
+           <li>Email:inquiries@nsbm.lk</li>
+     </ul>
+</div>
     </div>
   </body>
   </html>

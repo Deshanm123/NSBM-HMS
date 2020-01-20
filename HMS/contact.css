@@ -4,7 +4,9 @@ body{
 .container{
   width:1500px;
 }
-
+.topic{
+  text-align: center;
+}
 .nav{
   height:80px;
 }
@@ -72,3 +74,6 @@ display:inline-block;
 h1{
   color:white;
   background-color:#3366FF;
+.sec{
+  font-size: 15px;
+}

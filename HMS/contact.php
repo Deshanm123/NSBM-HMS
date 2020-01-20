@@ -9,11 +9,10 @@
     <div id="header">
       <div class="logo">
           <img src="logo.jpg"
-
     </div>
     </div>
 <div class="header">
-  <h1 style=>Hostel Management System</h1>
+  <h1 class="topic"> Hostel Management System</h1>
   </div>
 <div class="nav">
 <ul>
@@ -23,13 +22,9 @@
   <li><a href="contact.php">Contact</a></li>
   </ul>
 </div>
-
 </div>
-
-
 <div style= "color:white;" class ="contact-box" >
 <h2>Contact-Warden</h2>
-
   We are here to help get in touch with Warden .This facility will help parents to
 <ol style="font-style:italics;">
 <li> To get detailed information about student accomodation</li>
@@ -56,23 +51,19 @@
 
 </form>
 </div>
-
+<br>
+<br>
+<br>
+<br>
 <div class="sec">
-Nsbm  hostel compelx-security
-
-role of security employees:
-
-to what purpose parents can contact
-*to get immediate contact with Warden.
-*to get visting hours
-* to get general information of hostel complex
-
+Nsbm  hostel compelx-security role of security employees:
+<br>
+to what purpose parents can contact<br>
+*to get immediate contact with Warden.<br>
+*to get visting hours<br>
+* to get general information of hostel complex<br>
+<br>
 contact line:
-
-
-
 </div>
-
-
 </body>
 </html>
