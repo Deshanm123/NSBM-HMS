@@ -56,14 +56,11 @@ The folowing method is more effective:<br>
 <input type="text" name="id" value="">
 </form>
 </div>
-<div class="notifications">
-  Notifications.
-  use grid concept  talk about holidays special cusine edge openning
-</div>
+
 
 </div>
 
-/
+
 
 <button><a href="logindex.php?logout='1'"></a></button>
 }
