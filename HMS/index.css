@@ -15,9 +15,6 @@
     padding: 10px 10px;
     color:blue;
   }
-.img{
-  background-color: #efefef;
-}
 .landscape{
   background-color: #efefef;
 }
@@ -31,8 +28,7 @@ p3{
   background-color: #efefef;
 }
 body{
-  background-color: black;
-  font-size: 17px;
+  font-size: 25px;
   background-image: URL("canvas.jpg");
   text-align:center;
 }
@@ -68,6 +64,36 @@ h1{
   background-color:#3366FF;
   font-style: normal;
 }
-.nsbm-bullet{
-  list-style-image: URL("lilogo.jpg");
+.nav-2 ul li{
+  display: inline-block;
+}
+.nav-2 li a{
+  color: blue;
+  padding: 10px;
+  margin:90px;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.footer-logo{
+  height: auto;
+  width: auto;
+  float: left;
+}
+.program ul li{
+  list-style-type: none;
+}
+ .program ul li a{
+   text-decoration: none;
+ }
+ .program ol li{
+   list-style-type: none;
+ }
+  .program ol li a{
+    text-decoration: none;
+  }
+  .address ul li{
+    list-style-type: none;
+  }
+   .address ul li a{
+     text-decoration: none;
 }
