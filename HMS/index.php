@@ -75,7 +75,7 @@ A dedicated warden and an academic warden are available on premises with fulltim
 </p4>
 </div>
 
-<div class="banner-2"><br>
+<div class="banner-1">
 <img class="birdseye" src="nsbm-2020.jpg"  width="1024px" height="480px" alt="birdseye-view">
 </div>
 <br>
