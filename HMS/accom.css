@@ -42,25 +42,10 @@ border:1px;
 margin-left:200px;
 
 }
-.potential h2{
-  font-family:helvetica;
-  font-size:32px;
-  color:black ;
-  background-color:#21B23B;
-
-
-}
 .potential p{
   font-family:helvetica;
-  font-size:20px;
-  color:#09614E ;
-
-
-}
-.potential h3{
-  font-family:helvetica;
-  font-size:18px;
-  color:#11497F ;
+  font-size:32px;
+  color:blue;
 
 
 }

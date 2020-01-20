@@ -16,22 +16,22 @@ if(isset($_POST['user_register'])){
 
  $username=($_POST['username']);
  $email=($_POST['email']);
- $password_1=($_POST['password1']);
- $password_2=($_POST['password2']);
+ $password1=($_POST['password1']);
+ $password2=($_POST['password2']);
 }
 
 //form validation
 if(empty($username)){
   array_push($errors, 'username is required'); }
-if(empty($password_1)){
+if(empty($password1)){
   array_push($errors, "password is required"); }
-if(empty($password_2)){
+if(empty($password2)){
   array_push($errors, "password is required");}
 if($password1 != password2){array_push($errors, "passwords must match each other");}
 
 //register the user if there is no rrors
 if(count($errors == 0){
-  $usr_insert_query = "INSERT INTO user ('username' , 'email', 'password') VALUES ($username','$email','$password_1')"
+  $usr_insert_query = "INSERT INTO user ('username' , 'email', 'password1') VALUES ($username','$email','$password1')"
 mysqli_query($db,$usr_insert_query);
 $_SESSION['username']=$username;
 $_SESSION['sucess']="User sucessfully logged in";
@@ -59,7 +59,7 @@ if(count($errors == 0 )){
   if(mysql_num_rows($results)){
       $_SESSION['username'] = $username;
        $_SESSION['sucess'] = "logged in sucessfully";
-       header('location: logindex.php');
+       header("location: logindex.php");
 }
   else{
     array_push($errors,"wrrong credentials");
