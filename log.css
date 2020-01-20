@@ -1,6 +1,6 @@
 body{
   text-align:center;
-
+background-image: URL("canvas.jpg")
 }
 .container{
   width:auto;
