@@ -56,7 +56,7 @@ NSBM Green University Town is the first ever green university in South Asian reg
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="img\03.jpg" style="width:100%">
-    <div class="text">Facilities</div>
+    <div class="text">Facilities for Students</div>
   </div>
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
